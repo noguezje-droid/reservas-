@@ -26,7 +26,7 @@ app.use('/webhook', webhookRouter);
 app.get('/', (req, res) => {
   res.json({
     status: 'ok',
-    restaurant: process.env.RESTAURANT_NAME || 'Restaurante',
+    restaurant: process.env.RESTAURANT_NAME || 'La Mansion',
     version: '1.0.0',
     phase: 'Fase 1 — Claude API',
   });
@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 
 // ─── Validación de variables de entorno ───────────────────────
 const validateEnv = () => {
-  const required = ['ANTHROPIC_API_KEY', 'RESTAURANT_NAME', 'RESTAURANT_HOURS'];
+  const required = ['ANTHROPIC_API_KEY=sk-ant-api03-AWqTDnBXjLVogK7vSRB0tPFU5bHpRhvoIsVvTSGt_5qCDNm5WvVidWDON-j27a2sa3wuU_z aMWwmMAzYFplVOQ-Y2OJrgAA', 'RESTAURANT_NAME=La Mansion', 'RESTAURANT_HOURS=Lunes a domingo, 1pm a 11pm'];
   const missing = required.filter((key) => !process.env[key]);
 
   if (missing.length > 0) {
