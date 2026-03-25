@@ -52,9 +52,11 @@ app.listen(PORT, () => {
   console.log('\n═══════════════════════════════════════════');
   console.log(`🍽️  Agente de Reservas — ${process.env.RESTAURANT_NAME}`);
   console.log(`🚀  Servidor corriendo en puerto ${PORT}`);
-  console.log(`📡  Webhook: http://localhost:${PORT}/webhook/whatsapp`);
+  console.log(`📡  Webhook: http://localhost:${3000}/webhook/whatsapp`);
   console.log(`⏰  Horario: ${process.env.RESTAURANT_HOURS}`);
   console.log('═══════════════════════════════════════════\n');
 });
 
 module.exports = app;
+
+
