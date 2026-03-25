@@ -1,0 +1,18 @@
+{
+  "name": "agente-reservas",
+  "version": "1.0.0",
+  "description": "Agente de reservas para restaurantes vía WhatsApp + Claude AI",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
